@@ -1,0 +1,157 @@
+.profile-section {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 10px;
+    position: relative;  /* Ensure positioning for buttons */
+
+  }
+  
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .profile-header h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+
+  }
+  
+  .edit-button {
+    background-color: #085FA7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 109px;
+    height: 44px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-button-hidden {
+    background-color: transparent;
+    border: none;
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+  
+  .edit-icon {
+    font-size: 16px;
+    color: #666;
+    transition: transform 0.3s ease;
+  }
+  
+  .edit-icon.rotate {
+    transform: rotate(180deg);
+  }
+  
+  .profile-image-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    cursor: pointer;  /* Added for better user experience */
+
+  }
+  
+  .profile-name-role h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .profile-name-role p {
+    margin: 5px 0 0;
+    color: #666;
+  }
+  
+  .profile-fields {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-fields label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .input-container {
+    position: relative;
+    margin-top: 5px;
+  }
+  
+  .input-container input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .input-container .edit-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    cursor: pointer;
+  }
+  .profile-edit {
+    position: relative; /* Ensure the profile-edit container has relative positioning */
+    padding-bottom: 60px; /* Make space for buttons */
+  }
+  
+  
+
+.save-button, .cancel-button {
+    background-color: #085FA7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+ }
+  
+  .save-button {
+    right: 20px; /* Adjust position */
+    bottom: -10px; 
+  }
+  
+  .cancel-button {
+    right: 130px; /* Adjust position */
+    background-color: #ccc;
+    bottom: -10px;
+  }
+  
+  .save-button:hover, .cancel-button:hover {
+    opacity: 0.9;
+  }
+
+  .save-button + .cancel-button {
+    margin-right: 10px; /* Add space between buttons */
+  }

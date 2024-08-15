@@ -1,0 +1,37 @@
+.sidebar {
+  width: 240px;
+  background-color: #ffffff;
+  height: 100%;
+  border-right: 1px solid #e0e0e0;
+  overflow-y: auto;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+ }
+
+.sidebar ul li {
+  padding: 17.5px 27px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sidebar ul li:hover {
+  background-color: #e9ecef;
+}
+
+.sidebar ul li.active {
+  background-color: #0056b3;
+  color: white;
+}
+
+.sidebar .icon {
+  margin-right: 10px;
+}
